@@ -1,7 +1,3 @@
-# def player_move(n):
-#     return tuple(map(int, input(f'игрок №{n} введите координаты поля через пробел').split(' ')))
-
-
 def desk_view():
     print(f'\n    |  0  |  1  |  2\n'
           f'----+-----+-----+-----\n'
