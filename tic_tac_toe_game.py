@@ -53,21 +53,21 @@ def move(number):
                             f'выбранного поля через пробел  ').split(' ')
         if len(player_move) != 2:
             print(f'Вы должны ввести две координаты через пробел.' 
-                  f'Осталось {4 - i} попыток')
+                  f'Осталось {4 - i} попыток\n')
             wrong_input = True
             continue
         if not all([player_move[0].isdigit(), player_move[1].isdigit()]):
-            print(f'Координаты должны быть числом. Осталось {4 - i} попыток')
+            print(f'Координаты должны быть числом. Осталось {4 - i} попыток\n')
             wrong_input = True
             continue
         player_move = tuple(map(int, player_move))
         if not all([0 <= player_move[0] <= 2, 0 <= player_move[1] <= 2]):
             print(f'Координаты должны быть в пределах от 0 до 2.' 
-                  f'Осталось {4 - i} попыток')
+                  f'Осталось {4 - i} попыток\n')
             wrong_input = True
             continue
         if player_move in moves:
-            print(f'Клетка занята. Осталось {4 - i} попыток')
+            print(f'Клетка занята. Осталось {4 - i} попыток\n')
             wrong_input = True
             continue
         break
