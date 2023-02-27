@@ -103,7 +103,9 @@ while True:
                   f'****************\n')
             break
         if len(moves) == 9:
-            print('Ничья')
+            print('*****\n'
+                  'Ничья\n'
+                  '*****')
             break
     if any([input_error, win, len(moves) == 9]):
         break
