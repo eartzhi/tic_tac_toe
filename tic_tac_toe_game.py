@@ -82,7 +82,7 @@ print('Игра в крестики-нолики')
 print('**********************\n')
 
 desk_view()
-
+win = False
 while True:
     for n in range(1, 3):
         coordinates, input_error = move(n)
